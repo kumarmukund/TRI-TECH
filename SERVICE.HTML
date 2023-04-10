@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SERVICES</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <div
+      x-data="{ 
+        billingType: 'month', 
+        basicPrice: '19',
+        premiumPrice: '29',
+        proPrice: '39'
+    }"
+      class="min-h-full bg-gray-200 pb-12"
+    >
+      <div class="w-full bg-blue-900 pt-16 pb-24 text-center">
+        <h4 class="text-2xl text-gray-100">Choose the right service for you</h4>
+        <p class="text-sm text-gray-100 mt-2">
+          Services built for businesses of all sizes. Choose service that suits
+          your needs.
+        </p>
+        <div class="flex items-center justify-center mt-8"></div>
+      </div>
+      <div
+        class="w-full 2xl:w-3/4 flex items-center justify-center px-8 md:px-32 lg:px-16 2xl:px-0 mx-auto -mt-8"
+      >
+        <div class="w-full grid grid-cols-1 xl:grid-cols-3 gap-8">
+          <div class="bg-white shadow-2xl rounded-lg py-4">
+            <p class="text-xl text-center font-bold text-blue-600">
+              Website Design & Development
+            </p>
+            <!-- <p class="text-center py-8">
+              <span class="text-4xl font-bold text-gray-700">
+                &#8377;<span x-text="proPrice">13,500</span>
+              </span>
+              <span class="text-xs uppercase text-gray-500">
+                / <span x-text="billingType">Onwards</span>
+              </span>
+            </p> -->
+            <ul class="border-t border-gray-300 py-8 space-y-6">
+              <li class="flex items-center space-x-2 px-8">
+                <span class="bg-blue-600 rounded-full p-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3 w-3 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="text-gray-600 capitalize"
+                  >Dynamic Website Design</span
+                >
+              </li>
+              <li class="flex items-center space-x-2 px-8">
+                <span class="bg-blue-600 rounded-full p-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3 w-3 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="text-gray-600 capitalize"
+                  >Static Website Design</span
+                >
+              </li>
+              <li class="flex items-center space-x-2 px-8">
+                <span class="bg-blue-600 rounded-full p-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3 w-3 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="text-gray-600 capitalize"
+                  >E-commerce Solution</span
+                >
+              </li>
+              <li class="flex items-center space-x-2 px-8">
+                <span class="bg-blue-600 rounded-full p-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3 w-3 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="text-gray-600 capitalize">Web Maintenance</span>
+              </li>
+              <li class="flex items-center space-x-2 px-8">
+                <span class="bg-blue-600 rounded-full p-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3 w-3 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="text-gray-600 capitalize"
+                  >Custom Website design</span
+                >
+              </li>
+              <li class="flex items-center space-x-2 px-8">
+                <span class="bg-blue-600 rounded-full p-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3 w-3 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="text-gray-600 capitalize"
+                  >Template Base Design</span
+                >
+              </li>
+              <li class="flex items-center space-x-2 px-8">
+                <span class="bg-blue-600 rounded-full p-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3 w-3 text-white"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="text-gray-600 capitalize">Website Re-Design</span>
+              </li>
+            </ul>
+            <div class="flex items-center justify-center mt-6">
+              <a
+                href="QUOT.HTML"
+                class="bg-blue-600 hover:bg-blue-700 px-8 py-2 text-sm text-gray-200 uppercase rounded font-bold transition duration-150"
+                title="Purchase"
+                >Get Quotation</a
+              >
+            </div>
+            </div>
+            <div class="bg-white shadow-2xl rounded-lg py-4">
+              <p class="text-xl text-center font-bold text-blue-600">
+                Maintenance & Lead Generation
+              </p>
+              <ul class="border-t border-gray-300 py-8 space-y-6">
+                <li class="flex items-center space-x-2 px-8">
+                  <span class="bg-blue-600 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-3 w-3 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-gray-600 capitalize"
+                    >Global SEO Package</span
+                  >
+                </li>
+                <li class="flex items-center space-x-2 px-8">
+                  <span class="bg-blue-600 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-3 w-3 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-gray-600 capitalize"
+                    >Local SEO Package</span
+                  >
+                </li>
+                <li class="flex items-center space-x-2 px-8">
+                  <span class="bg-blue-600 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-3 w-3 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-gray-600 capitalize"
+                    >Social Media Marketing</span
+                  >
+                </li>
+                <li class="flex items-center space-x-2 px-8">
+                  <span class="bg-blue-600 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-3 w-3 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-gray-600 capitalize">Lead Generation</span>
+                </li>
+                <li class="flex items-center space-x-2 px-8">
+                  <span class="bg-blue-600 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-3 w-3 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-gray-600 capitalize"
+                    >LinkedIn Ads Marketing</span
+                  >
+                </li>
+                <li class="flex items-center space-x-2 px-8">
+                  <span class="bg-blue-600 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-3 w-3 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-gray-600 capitalize"
+                    >Facebook Ads Marketing</span
+                  >
+                </li>
+                <li class="flex items-center space-x-2 px-8">
+                  <span class="bg-blue-600 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-3 w-3 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="text-gray-600 capitalize"
+                    >Google Ads Services(PPC)</span
+                  >
+                </li>
+          
+              </ul>
+              <div class="flex items-center justify-center mt-6">
+                <a
+                  href="QUOT.HTML"
+                  class="bg-blue-600 hover:bg-blue-700 px-8 py-2 text-sm text-gray-200 uppercase rounded font-bold transition duration-150"
+                  title="Purchase"
+                  >Get Quotation</a
+                >
+              </div>
+        </div>
+        <div class="bg-white shadow-2xl rounded-lg py-4">
+          <p class="text-xl text-center font-bold text-blue-600">
+          Mobile App Development 
+          </p>
+          <ul class="border-t border-gray-300 py-8 space-y-6">
+            <li class="flex items-center space-x-2 px-8">
+              <span class="bg-blue-600 rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-600 capitalize"
+                >Android App Development</span
+              >
+            </li>
+            <li class="flex items-center space-x-2 px-8">
+              <span class="bg-blue-600 rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-600 capitalize"
+                >IOS App Development</span
+              >
+            </li>
+            <li class="flex items-center space-x-2 px-8">
+              <span class="bg-blue-600 rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-600 capitalize"
+                >Cross platform App</span
+              >
+            </li>
+            <li class="flex items-center space-x-2 px-8">
+              <span class="bg-blue-600 rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-600 capitalize">Backend & API</span>
+            </li>
+            <li class="flex items-center space-x-2 px-8">
+              <span class="bg-blue-600 rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-600 capitalize"
+                >Mobile App Testing</span
+              >
+            </li>
+            <li class="flex items-center space-x-2 px-8">
+              <span class="bg-blue-600 rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-600 capitalize"
+                >Mobile App Re-Design</span
+              >
+            </li>
+            <li class="flex items-center space-x-2 px-8">
+              <span class="bg-blue-600 rounded-full p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3 w-3 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+              <span class="text-gray-600 capitalize"
+                >App Maintenence</span
+              >
+            </li>
+      
+          </ul>
+          <div class="flex items-center justify-center mt-6">
+            <a
+              href="QUOT.HTML"
+              class="bg-blue-600 hover:bg-blue-700 px-8 py-2 text-sm text-gray-200 uppercase rounded font-bold transition duration-150"
+              title="Purchase"
+              >Get Quotation</a
+            >
+          </div>
+    </div>
+
+      </div>
+    </div>
+     <!-- FOOTER--->
+<section class="bg-white">
+  <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+      <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+          <div class="px-5 py-2">
+              <a href="ABOUT.HTML" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  About
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="SERVICE.HTML" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Pricing
+              </a>
+          </div>
+          <div class="px-5 py-2">
+              <a href="CONTACT.HTML" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Contact
+              </a>
+          </div>
+      </nav>
+      <p class="mt-8 text-base leading-6 text-center text-gray-400">
+          © 2023 TRI TECH, Inc. All rights reserved.
+      </p>
+  </div>
+</section>
+<!-- END OF FOOTER  -->
+  </body>
+</html>
